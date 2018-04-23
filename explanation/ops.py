@@ -80,6 +80,9 @@ def explain_random(game, explainations):
         # Get explanation.
         image, mask = explain(action, observation, model, list(range(game.actions)))
 
+        # Convert image to rgb.
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
         # De-normalise.
         marked = mark_boundaries(image, mask) * 255
 

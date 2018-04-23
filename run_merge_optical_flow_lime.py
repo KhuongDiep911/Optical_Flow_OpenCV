@@ -27,8 +27,8 @@ for game in games:
         lime_path = './explanation/results/{0}/frames/{1}'.format(game.name, file)
         optical_flow_path = './optical_flow/results/dense/{0}/frames/{1}'.format(game.name, file)
         if os.path.isfile(optical_flow_path):
-            img_optical_flow = image_load_rgb(optical_flow_path)
-            img_lime = image_load_rgb(lime_path)
+            img_optical_flow = image_load_bgr(optical_flow_path)
+            img_lime = image_load_bgr(lime_path)
 
             # Create new (84 x 336 x 3) image by stacking repeated optical flow images in the y-axis.
             img_optical_flow_stacked = np.hstack(
