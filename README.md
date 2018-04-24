@@ -1,11 +1,11 @@
 # CE888 Assignment 2
 # Interpreting the Actions of Atari 2600 Agents
 
-This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances were captured that coupled four sequential frames of Atari 2600 gameplay with the response of an autonomous agent trained to play the game. The pre-trained agent was sourced from the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which trained 47 different Atari 2600 agents using a multi-GPU version of the [A3C](https://arxiv.org/pdf/1602.01783.pdf) algorithm.
+This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances were captured that couple four sequential frames of Atari 2600 gameplay with the response of an autonomous agent trained to play a specific game. The pre-trained agent was sourced from the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which trained 47 different Atari 2600 agents using a multi-GPU version of the [A3C](https://arxiv.org/pdf/1602.01783.pdf) algorithm.
 
-The objective of this work is to interpret the captured data instances to provide insights as to why the agents took the actions they did and therefore discover what the agent learnt about the game in order to play successfully. This work conducts serval experiments involving [LIME](https://github.com/marcotcr/lime) (Local Interpretable Model-Agnostic Explanations), OpenCV V3.4.0 Lucas-Kanade and Gunnar Farneback [optical flow](https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_lucas_kanade.html) implementations and the scikit learn implementations of [K-Means](http://scikit-learn.org/stable/modules/clustering.html#k-means) and [Agglomerative clustering](http://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering) techniques.
+The objective of this work is to interpret the captured data instances and to provide insights as to why the agents took the actions they did and therefore discover what the agent learnt about the game in order to play successfully. This work conducts serval experiments involving [LIME](https://github.com/marcotcr/lime) (Local Interpretable Model-Agnostic Explanations), OpenCV V3.4.0 Lucas-Kanade and Gunnar Farneback [optical flow](https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_lucas_kanade.html) implementations and the scikit learn implementations of [K-Means](http://scikit-learn.org/stable/modules/clustering.html#k-means) and [Agglomerative clustering](http://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering) techniques.
 
-This file briefly explains the experiments conducted and provides a samples of the obtained results.
+This file briefly explains the experiments conducted and provides a sample of the obtained results.
 
 ## Experiments
 
@@ -61,7 +61,7 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOptic
 ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/road_runner/frames/90-0-90-9.png "TEXT")
 ![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/tennis/frames/10-0-10-16.png "TEXT")
 
-#### Combining the Output of LIME and Dense Optical Flow
+#### Combining LIME Output and Dense Optical Flow
 
 The output of LIME and results of the dense optical flow calculations were combined to create new insights.
 
