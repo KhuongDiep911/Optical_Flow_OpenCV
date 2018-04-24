@@ -9,9 +9,13 @@ This file briefly explains the experiments conducted and provides a samples of t
 
 ## Experiments
 
-A number of tecchniques were used to gain insights into the reason why the Atari agents took the actions it did given a certain input. This study tackled the problem from a number of perspectives.
+Several experiments were conducted using data instances captured in [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) which aim to provide insights as to why autonomous agents trained to play Atari 2600 games took the actions they did and therefore discover what the agent learnt about the game in order to play successfully.
 
-This file briefly describes the results of the study and the impact of the experiments.
+* **LIME** By perturbing the Atari 2600 gameplay frames, the LIME framework reveals regions of the input frames that made the most contribution towards selecting the resulting action.
+* **Optical Flow** Reveals the movement of atrefacts in the frame that could be key to the agents deciding upon an action.
+* **Image Clustering** Identifies whether similarities in sequences of frames are responsible for the agent selecting the action they did.
+
+An overview of these experiments and a summary of results is provided below.
 
 ### LIME (Local Interpretable Model-Agnostic Explanations)
 
