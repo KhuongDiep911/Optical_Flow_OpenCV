@@ -37,7 +37,7 @@ Optical flow techniques were used to reveal and extract the movement of artefact
 
 #### Lucas Kanade, sparse optical flow.
 
-The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([calcOpticalFlowPyrLK](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calcluated and visualised on top of the final frame in the sequence.
+The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([`calcOpticalFlowPyrLK`](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calcluated and visualised on top of the final frame in the sequence.
 
 ![Lucas_Kanade_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "Lucas Kanade, Asteroids")
 ![Lucas_Kanade_Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "Lucas Kanade, Battle Zone")
@@ -50,7 +50,7 @@ The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([calcOpticalFlowPyr
 
 #### Gunnar Farneback, dense optical flow.
 
-The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOpticalFlowFarneback](https://docs.opencv.org/2.4/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback)) dense optical flow algorithm. The dense optical flow image is calculated for each frame transition, merged and visualised on top of the final frame in the sequence.
+The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOpticalFlowFarneback`](https://docs.opencv.org/2.4/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback)) dense optical flow algorithm. The dense optical flow image is calculated for each frame transition, merged and visualised on top of the final frame in the sequence.
 
 ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/asteroids/frames/76-0-76-5.png "TEXT")
 ![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/battle_zone/frames/97-0-97-4.png "TEXT")
@@ -81,9 +81,7 @@ Road Runner | Tennis
 
 ### Image Cluster Analysis
 
-* **Image Clustering** Forming natural clusters of similar frame sequences may reveal common artefacts that lead to selection of a specific action.
-
-Image cluster analysis is performed to determine whether the observations could be clustered into groups that contain features which reveal the relavent action to be taken.
+Cluster analysis of the previously captured observations was performed to determine whether specific actions were taken for frames that contain similar artefacts. 
 
 The analysis was performed using the [K-Means](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512992) and [Agglomerative Hierarchical](https://books.google.co.uk/books/about/Numerical_Taxonomy.html?id=iWWcQgAACAAJ&redir_esc=y) clustering algorithms. The results of both techniques are compared using [silhouette coefficients](https://ac.els-cdn.com/0377042787901257/1-s2.0-0377042787901257-main.pdf?_tid=45f93935-07e9-4d91-9c07-f887d75d4283&acdnat=1524558319_227f4e120f76072443bc235ab08a6d55) which reveal the coherance of instance and the same cluster and the separation between clusters which is indicative of good clusters being formed.
 
