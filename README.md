@@ -39,14 +39,16 @@ Optical flow techniques were used to reveal and extract the movement of artefact
 
 The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([`calcOpticalFlowPyrLK`](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calculated and visualised on top of the final frame in the sequence.
 
-![Lucas_Kanade_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "Lucas-Kanade, Asteroids")
-![Lucas_Kanade_Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "Lucas-Kanade, Battle Zone")
-![Lucas_Kanade_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/breakout/frames/78-0-78-2.png "Lucas-Kanade, Breakout")
-![Lucas_Kanade_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/gopher/frames/90-0-90-7.png "Lucas-Kanade, Gopher")
-![Lucas_Kanade_James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/james_bond/frames/27-0-27-8.png "Lucas-Kanade, James Bond")
-![Lucas_Kanade_Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/ms_pacman/frames/98-0-98-0.png "Lucas-Kanade, Ms. Pacman")
-![Lucas_Kanade_Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/road_runner/frames/105-0-105-9.png "Lucas-Kanade, Road Runner")
-![Lucas_Kanade_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/tennis/frames/29-0-29-15.png "Lucas-Kanade, Tennis")
+Each of the below images is a link to a YouTube video showing the Lucas-Kanade sparse optical flow algorithm in real time.
+
+[![Lucas_Kanade_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "Lucas-Kanade, Asteroids")](https://youtu.be/0k5oxy-qaFY)
+[![Lucas_Kanade_Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "Lucas-Kanade, Battle Zone")](https://youtu.be/nHLj-vz-54k)
+[![Lucas_Kanade_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/breakout/frames/78-0-78-2.png "Lucas-Kanade, Breakout")](https://youtu.be/e-29cn_ySrQ)
+[![Lucas_Kanade_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/gopher/frames/90-0-90-7.png "Lucas-Kanade, Gopher")](https://youtu.be/rYmVMO3wpf8)
+[![Lucas_Kanade_James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/james_bond/frames/27-0-27-8.png "Lucas-Kanade, James Bond")](https://youtu.be/phVo-TAfJTU)
+[![Lucas_Kanade_Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/ms_pacman/frames/98-0-98-0.png "Lucas-Kanade, Ms. Pacman")](https://youtu.be/YY5eELQSmEg)
+[![Lucas_Kanade_Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/road_runner/frames/105-0-105-9.png "Lucas-Kanade, Road Runner")](https://youtu.be/MUfnj6NaufA)
+[![Lucas_Kanade_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/tennis/frames/29-0-29-15.png "Lucas-Kanade, Tennis")](https://youtu.be/p4OMXxJ8zno)
 
 #### Gunnar Farneback, dense optical flow.
 
