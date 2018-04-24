@@ -59,16 +59,16 @@ TODO! Add cross images.
 
 ### Clustering
 
-| Game          | Actions | SC K-Means | # Clusters K-Means | SC Agglomerative | # Clusters Agglomerative |
-| ------------- |:-------:|:----------:|:------------------:|:----------------:|:------------------------:|
-| Asteroids     | 14      |            |                    |                  |                          |
-| Battle Zone   | 18      |            |                    |                  |                          |
-| Breakout      | 4       |            |                    |                  |                          |
-| Gopher        | 8       |            |                    |                  |                          |
-| James Bond    | 18      |            |                    |                  |                          |
-| Ms. Pacman    | 9       |            |                    |                  |                          |
-| Road Runner   | 18      |            |                    |                  |                          |
-| Tennis        | 18      |            |                    |                  |                          |
+| Game          | Actions | SC K-Means (3SF) | # Clusters K-Means | SC Agglomerative (3SF) | # Clusters Agglomerative |
+| ------------- |:-------:|:----------------:|:------------------:|:----------------------:|:------------------------:|
+| Asteroids     | 14      | 0.0421           | 18                 | 0.0558                 | 6                        |
+| Battle Zone   | 18      | 0.0473           | 16                 | 0.0141                 | 18                       |
+| Breakout      | 4       | 0.109            | 16                 | 0.0900                 | 4                        |
+| Gopher        | 8       | 0.0555           | 9                  | 0.0406                 | 10                       |
+| James Bond    | 18      | 0.0404           | 16                 | 0.0352                 | 6                        |
+| Ms. Pacman    | 9       | 0.108            | 4                  | 0.0903                 | 3                        |
+| Road Runner   | 18      | 0.0115           | 8                  | 0.00126                | 13                       |
+| Tennis        | 18      | 0.0799           | 8                  | 0.0685                 | 8                        |
 
 
 
