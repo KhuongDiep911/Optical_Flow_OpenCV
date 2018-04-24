@@ -95,7 +95,7 @@ Asteroids, K-Means Clustering |  Asteroids, Agglomerative Clustering
 :---------------------------:|:------------------------------------:
 ![K-Means_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png "Astroids, K-Means Clustering")  |  ![Agglomerative_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_agglomerative_silhouette_asteroids.png "Asteroids, Agglomerative Clustering")
 
-The table below summarises the graphical results across the eight games used in this work; it presents the number of actions available to the agent in each game, the lowest silhouette score obtained by each technique and the number of clusters used to obtain the lowest silhouette score.
+The table below summarises the graphical results across the eight games used in this work; it presents the number of actions available to the agent in each game, the lowest silhouette coefficient (SC) score obtained by each technique and the number of clusters used to obtain the lowest silhouette score.
 
 | Game          | Actions | SC K-Means (3SF) | # Clusters K-Means | SC Agglomerative (3SF) | # Clusters Agglomerative |
 | ------------- |:-------:|:----------------:|:------------------:|:----------------------:|:------------------------:|
