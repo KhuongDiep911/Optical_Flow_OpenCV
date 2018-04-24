@@ -89,6 +89,7 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOptica
 | Road Runner   | 18      | 0.0115           | 8                  | 0.00126                | 13                       |
 | Tennis        | 18      | 0.0799           | 8                  | 0.0685                 | 8                        |
 
+
 <img src="https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png" width="300">
 
 <!-- 
