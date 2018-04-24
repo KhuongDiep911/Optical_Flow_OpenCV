@@ -16,6 +16,22 @@ A number of tecchniques were used to gain insights into the reason why the Atari
 
 This file briefly describes the results of the study and the impact of the experiments.
 
+### LIME (Local Interpretable Model-Agnostic Explanations)
+
+[LIME](https://github.com/marcotcr/lime)
+
+![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/asteroids/frames/4394-6-23-8.png "TEXT")
+![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/battle_zone/frames/2177-0-2177-13.png "TEXT")
+
+![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/breakout/frames/1911-0-1911-2.png "TEXT")
+![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/gopher/frames/1131-0-1131-3.png "TEXT")
+
+![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/james_bond/frames/4851-2-494-17.png "TEXT")
+![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/ms_pacman/frames/4475-1-2048-2.png "TEXT")
+
+![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "TEXT")
+![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "TEXT")
+
 ### Optical Flow
 
 Optical flow was used to identify the movement of actors in the scene which is seen been the Atari agent during the sequence of input frames. Below are the results of running the spare optical flow and the dense optical flow.
@@ -46,18 +62,32 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOptica
 ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/road_runner/frames/90-0-90-9.png "TEXT")
 ![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/tennis/frames/10-0-10-16.png "TEXT")
 
-### LIME (Local Interpretable Model-Agnostic Explanations)
+#### LIME Cross Dense Optical Flow
 
-[LIME](https://github.com/marcotcr/lime)
+![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "TEXT")
+![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "TEXT")
 
+![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1469-0-1469-3.png "TEXT")
+![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1334-0-1334-6.png "TEXT")
 
-TODO! Add LIME images.
+![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1404-0-1404-8.png "TEXT")
+![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1390-0-1390-5.png "TEXT")
 
-#### LIME Cross Sparse Optical Flow
-
-TODO! Add cross images.
+![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/140-0-140-7.png "TEXT")
+![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/760-0-760-15.png "TEXT")
 
 ### Clustering
+
+| Game          | Actions | SC K-Means (3SF) | # Clusters K-Means | SC Agglomerative (3SF) | # Clusters Agglomerative |
+| ------------- |:-------:|:----------------:|:------------------:|:----------------------:|:------------------------:|
+| Asteroids     | 14      | 0.0421           | 18                 | 0.0558                 | 6                        |
+| Battle Zone   | 18      | 0.0473           | 16                 | 0.0141                 | 18                       |
+| Breakout      | 4       | 0.109            | 16                 | 0.0900                 | 4                        |
+| Gopher        | 8       | 0.0555           | 9                  | 0.0406                 | 10                       |
+| James Bond    | 18      | 0.0404           | 16                 | 0.0352                 | 6                        |
+| Ms. Pacman    | 9       | 0.108            | 4                  | 0.0903                 | 3                        |
+| Road Runner   | 18      | 0.0115           | 8                  | 0.00126                | 13                       |
+| Tennis        | 18      | 0.0799           | 8                  | 0.0685                 | 8                        |
 
 <img src="https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png" width="300">
 
