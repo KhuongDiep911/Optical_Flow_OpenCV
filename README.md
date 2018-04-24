@@ -39,7 +39,7 @@ Optical flow techniques were used to reveal and extract the movement of artefact
 
 The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([`calcOpticalFlowPyrLK`](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calculated and visualised on top of the final frame in the sequence.
 
-Each of the below images is a link to a YouTube video showing the Lucas-Kanade sparse optical flow algorithm in real time.
+*Each of the below images is a link to a YouTube video showing the Lucas-Kanade sparse optical flow algorithm in real time.*
 
 [![Lucas_Kanade_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "Lucas-Kanade, Asteroids")](https://youtu.be/0k5oxy-qaFY)
 [![Lucas_Kanade_Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "Lucas-Kanade, Battle Zone")](https://youtu.be/nHLj-vz-54k)
@@ -54,7 +54,7 @@ Each of the below images is a link to a YouTube video showing the Lucas-Kanade s
 
 The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOpticalFlowFarneback`](https://docs.opencv.org/2.4/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback)) dense optical flow algorithm. The dense optical flow image is calculated for each frame transition, merged and visualised on top of the final frame in the sequence.
 
-Each of the below images is a link to a YouTube video showing Gunnar Farneback's dense optical flow algorithm in real time.
+*Each of the below images is a link to a YouTube video showing Gunnar Farneback's dense optical flow algorithm in real time.*
 
 [![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/asteroids/frames/76-0-76-5.png "Gunnar Farneback, Asteroids")](https://youtu.be/ptdM1Kqk_Lg)
 [![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/battle_zone/frames/97-0-97-4.png "Gunnar Farneback, Battle Zone")](https://youtu.be/ANE-RW24tww)
