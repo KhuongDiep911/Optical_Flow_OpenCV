@@ -53,13 +53,13 @@ The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([`calcOpticalFlowPy
 The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOpticalFlowFarneback`](https://docs.opencv.org/2.4/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback)) dense optical flow algorithm. The dense optical flow image is calculated for each frame transition, merged and visualised on top of the final frame in the sequence.
 
 [![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/asteroids/frames/76-0-76-5.png "TEXT")](https://youtu.be/ptdM1Kqk_Lg)
-![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/battle_zone/frames/97-0-97-4.png "TEXT")
-![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/breakout/frames/31-0-31-0.png "TEXT")
-![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/gopher/frames/98-0-98-4.png "TEXT")
-![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/james_bond/frames/7-0-7-7.png "TEXT")
-![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/ms_pacman/frames/93-0-93-0.png "TEXT")
-![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/road_runner/frames/90-0-90-9.png "TEXT")
-![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/tennis/frames/10-0-10-16.png "TEXT")
+[![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/battle_zone/frames/97-0-97-4.png "TEXT")](https://youtu.be/ANE-RW24tww)
+[![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/breakout/frames/31-0-31-0.png "TEXT")](https://youtu.be/bdCaDcAIGfs)
+[![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/gopher/frames/98-0-98-4.png "TEXT")](https://youtu.be/P3LXAsLRzG8)
+[![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/james_bond/frames/7-0-7-7.png "TEXT")](https://youtu.be/DI3hRU6ZaQQ)
+[![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/ms_pacman/frames/93-0-93-0.png "TEXT")](https://youtu.be/aR2BiUIYroY)
+[![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/road_runner/frames/90-0-90-9.png "TEXT")](https://youtu.be/-UMCfbBht8E)
+[![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/tennis/frames/10-0-10-16.png "TEXT")](https://youtu.be/Sorx2HGqqXc)
 
 #### Combining LIME Output and Dense Optical Flow
 
