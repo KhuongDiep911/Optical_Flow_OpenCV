@@ -65,7 +65,7 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOptica
 #### LIME Cross Dense Optical Flow
 
 Astroids | Battle Zone
-:-------:|:---------- :
+:-------:|:----------:
 ![K-Means_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "Astroids, K-Means Clustering")  |  ![Agglomerative_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "Asteroids, Agglomerative Clustering")
 
 ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "TEXT")
