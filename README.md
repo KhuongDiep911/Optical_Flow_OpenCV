@@ -1,9 +1,11 @@
 # CE888 Assignment 2
 # Interpreting the Actions of Atari 2600 Agents
 
-This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances that consist of four sequential frames of Atari 2600 gameplay and the action taken by an autonomous agent in response. The agent was pre-trained using the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which employs a multi-GPU version of the [A3C algorithm](https://arxiv.org/pdf/1602.01783.pdf).
+This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances were captured that coupled four sequential frames of Atari 2600 gameplay with the response of an autonomous agent trained to play the game. The pre-trained agent was sourced from the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which trained 47 different Atari 2600 agents using a multi-GPU version of the [A3C algorithm](https://arxiv.org/pdf/1602.01783.pdf).
 
-The objective of this work is to use the captured data instance to interpret or provide explanations as to why the agent took those actions, to gain an insight into what the agent learnt about the game to be successful. The experiments conducted in this work involve LIME, optical flow and image clustering which are described briefly here alongside a sample of results. 
+The objective of this work is to interpret the captured data instances to provide insights as to why the agents took the actions they did and therefore discover what the agent learnt about the game in order to play successfully. This work conducts serval experiments involving [LIME](https://github.com/marcotcr/lime) (Local Interpretable Model-Agnostic Explanations), OpenCV V3.4.0 Lucas Kanade and Gunnar Farneback [optical flow](https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_lucas_kanade.html) implementations and the scikit learn implementations of [K-Means](http://scikit-learn.org/stable/modules/clustering.html#k-means) and [Agglomerative clustering](http://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering) techniques.
+
+This file briefly explains the experiments conducted and provides a samples of the obtained results.
 
 ## Experiments
 
