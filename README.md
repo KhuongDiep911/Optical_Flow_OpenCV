@@ -1,14 +1,9 @@
 # CE888 Assignment 2
 # Interpreting the Actions of Atari 2600 Agents
 
-This work builds upon [ce888assignment1](https://github.com/JamesMadge/ce888assignment1) which captured data from agents playing eight Atari 2600 games. This data was the observations in the form of sequences of four frames from the Atari games and the resulting action that the agent has been train to output.
+This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances that consist of four sequential frames of Atari 2600 gameplay and the action taken by an autonomous agent in response. The agent was pre-trained using the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which employs a multi-GPU version of the [A3C algorithm](https://arxiv.org/pdf/1602.01783.pdf).
 
-This work uses the data to conduct a series of experiments aimed at interpreting or providing explanations for the actions taken by the agent so that insights may be obtained about the what the agent has learnt about each of the game in order to be successful.
-
-This file briefly introduces the conducted experiments and some of the results obtained.
-
-
-<!-- This repository has been created for the purpose of the CE888 Assigment 2 deliverable and contain all code developed for the purpose of this project and a subset of experimental results.-->
+The objective of this work is to use the captured data instance to interpret or provide explanations as to why the agent took those actions, to gain an insight into what the agent learnt about the game to be successful. The experiments conducted in this work involve LIME, optical flow and image clustering which are described briefly here alongside a sample of results. 
 
 ## Experiments
 
