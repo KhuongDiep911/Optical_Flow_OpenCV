@@ -9,11 +9,11 @@ This file briefly explains the experiments conducted and provides a samples of t
 
 ## Experiments
 
-Each experiment performed approaches the problem from a different perspective. This section introduces the motives behind these experiments and presents a sample of results.
+Each experiment approaches the problem from a different perspective. This section introduces the motives behind these experiments and presents a sample of results.
 
 ### Frame Perturbation
 
-Previously captured observations are passed to the [LIME](https://github.com/marcotcr/lime) framework which perturbs the sequence of frames to determine which regions contributed most significantly towards the selection of the associated action. 
+Previously captured observations are passed to the [LIME](https://github.com/marcotcr/lime) framework which perturbs the sequence of frames to determine which regions contributed most significantly towards the selection of the associated action. A data instance for each game is shown below with highlights representing the regions determined by LIME to contribute most significantly towards the selected action.
 
 Astroids (UP_FIRE) | Battle Zone (DOWN_FIRE)
 :-------:|:----------:
@@ -31,41 +31,26 @@ Road Runner (UP_LEFT) | Tennis (DOWN_LEFT)
 :----------:|:----------:
 ![LIME_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "LIME, Road Runner")  |  ![LIME_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "LIME, Tennis")
 
-
-<!-- ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/asteroids/frames/4394-6-23-8.png "TEXT")
-![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/battle_zone/frames/2177-0-2177-13.png "TEXT") -->
-
-<!-- ![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/breakout/frames/1911-0-1911-2.png "TEXT")
-![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/gopher/frames/1131-0-1131-3.png "TEXT") -->
-
-<!-- ![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/james_bond/frames/4851-2-494-17.png "TEXT")
-![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/ms_pacman/frames/4475-1-2048-2.png "TEXT") -->
-
-<!-- ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "TEXT")
-![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "TEXT") -->
-
 ### Movement
 
-* **Movement** Optical flow techniques were used to reveal and extract the movement of artefacts in the gameplay frames which the agent may use to select the associated action.
-
-Optical flow was used to identify the movement of actors in the scene which is seen been the Atari agent during the sequence of input frames. Below are the results of running the spare optical flow and the dense optical flow.
+Optical flow techniques were used to reveal and extract the movement of artefacts in the gameplay frames which the agent may use to select the associated action.
 
 #### Lucas Kanade, sparse optical flow.
 
-The OpenCV V3.4.0 python implementation of the Lucas-Kanade  ([calcOpticalFlowPyrLK](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm.
+The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([calcOpticalFlowPyrLK](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calcluated and visualised on top of the final frame in the sequence.
 
-![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "TEXT")
-![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "TEXT")
-![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/breakout/frames/78-0-78-2.png "TEXT")
-![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/gopher/frames/90-0-90-7.png "TEXT")
-![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/james_bond/frames/27-0-27-8.png "TEXT")
-![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/ms_pacman/frames/98-0-98-0.png "TEXT")
-![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/road_runner/frames/105-0-105-9.png "TEXT")
-![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/tennis/frames/29-0-29-15.png "TEXT")
+![Lucas_Kanade_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "Lucas Kanade, Asteroids")
+![Lucas_Kanade_Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "Lucas Kanade, Battle Zone")
+![Lucas_Kanade_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/breakout/frames/78-0-78-2.png "Lucas Kanade, Breakout")
+![Lucas_Kanade_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/gopher/frames/90-0-90-7.png "Lucas Kanade, Gopher")
+![Lucas_Kanade_James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/james_bond/frames/27-0-27-8.png "Lucas Kanade, James Bond")
+![Lucas_Kanade_Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/ms_pacman/frames/98-0-98-0.png "Lucas Kanade, Ms. Pacman")
+![Lucas_Kanade_Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/road_runner/frames/105-0-105-9.png "Lucas Kanade, Road Runner")
+![Lucas_Kanade_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/tennis/frames/29-0-29-15.png "Lucas Kanade, Tennis")
 
 #### Gunnar Farneback, dense optical flow.
 
-The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOpticalFlowFarneback](https://docs.opencv.org/2.4/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback)) dense optical flow algorithm.
+The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOpticalFlowFarneback](https://docs.opencv.org/2.4/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback)) dense optical flow algorithm. The dense optical flow image is calculated for each frame transition, merged and visualised on top of the final frame in the sequence.
 
 ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/asteroids/frames/76-0-76-5.png "TEXT")
 ![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/battle_zone/frames/97-0-97-4.png "TEXT")
