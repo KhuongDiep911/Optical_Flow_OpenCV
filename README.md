@@ -76,7 +76,21 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOptica
 ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/140-0-140-7.png "TEXT")
 ![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/760-0-760-15.png "TEXT")
 
-### Clustering
+### Image Cluster Analysis
+
+Image cluster analysis is performed to determine whether the observations could be clustered into groups that contain features which reveal the relavent action to be taken.
+
+The analysis was performed using the [K-Means](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512992) and [Agglomerative Hierarchical](https://books.google.co.uk/books/about/Numerical_Taxonomy.html?id=iWWcQgAACAAJ&redir_esc=y) clustering algorithms. The results of both techniques are compared using [silhouette coefficients](https://ac.els-cdn.com/0377042787901257/1-s2.0-0377042787901257-main.pdf?_tid=45f93935-07e9-4d91-9c07-f887d75d4283&acdnat=1524558319_227f4e120f76072443bc235ab08a6d55) which reveal the coherance of instance and the same cluster and the separation between clusters which is indicative of good clusters being formed.
+
+Image histograms were uses as the distance metric with a bin size of 256. 1000 images samples were taken for each game. The number of clusters were varied between 2 and 18 the number of iterations was set to 10 to overcome variability caused be random cluster initialization. The [`StandardScalar`](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) feature transform was use over the [`RobustScalar`](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html).
+
+Below is an example of the graphical results obtained from clustering observations from the Astroids Atari game.
+
+<img src="https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png" width="300">
+
+<img src="https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_agglomerative_silhouette_asteroids.png" width="300">
+
+The table below summarises the graphics results by showing the lowest silhouette score for each technique and the number of clusters for which that score was obtained.
 
 | Game          | Actions | SC K-Means (3SF) | # Clusters K-Means | SC Agglomerative (3SF) | # Clusters Agglomerative |
 | ------------- |:-------:|:----------------:|:------------------:|:----------------------:|:------------------------:|
@@ -90,9 +104,7 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOptica
 | Tennis        | 18      | 0.0799           | 8                  | 0.0685                 | 8                        |
 
 
-<img src="https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png" width="300">
-
-<!-- 
+<!--
 
 8 [data sets](https://github.com/JamesMadge/ce888assignment1/tree/master/data) have been captured, each comprised of 5000 instances formed from 4 concatenated sequential frames of [agents](http://models.tensorpack.com/OpenAIGym/) playing one of eight Atari games, namely; Asteroids, Battle Zone, *Breakout*, *Gopher*, *James Bond*, *Ms. Pacman*, *Road Runner* and *Tennis*. The first 50 instances of each data set have been uploaded to GitHib for the purposes of demonstration. The entire data is 0.5GiB and hence is stored and maintained locally.
 
@@ -131,5 +143,7 @@ for it in range(4):
 im = Image.fromarray(stacker)
 im.save("game_name-" + str(t) + ".png") # you need to define (t) somewhere so that you know which part of the game you are in. 
 
--->
+
 ```
+
+-->
