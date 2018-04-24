@@ -61,21 +61,23 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOptic
 ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/road_runner/frames/90-0-90-9.png "TEXT")
 ![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/tennis/frames/10-0-10-16.png "TEXT")
 
-#### LIME Cross Dense Optical Flow
+#### Combining the Output of LIME and Dense Optical Flow
 
-Astroids | Battle Zone
+The output of LIME and results of the dense optical flow calculations were combined to create new insights.
+
+Astroids (UP_FIRE) | Battle Zone (UP_FIRE)
 :-------:|:----------:
 ![LIME_DOF_Merge_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "LIME & Dense Optical Flow Merge, Asteroids")  |  ![LIME_DOF_Merge_Battle_Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "LIME & Dense Optical Flow Merge, Battle Zone")
 
-Breakout | Gopher
+Breakout (LEFT) | Gopher (RIGHT_FIRE)
 :-------:|:----------:
 ![LIME_DOF_Merge_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1469-0-1469-3.png "LIME & Dense Optical Flow Merge, Breakout")  |  ![LIME_DOF_Merge_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1334-0-1334-6.png "LIME & Dense Optical Flow Merge, Gopher")
 
-James Bond | Ms. Pacman
+James Bond (DOWN_RIGHT) | Ms. Pacman (UP_RIGHT)
 :---------:|:----------:
 ![LIME_DOF_Merge_James_Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1404-0-1404-8.png "LIME & Dense Optical Flow Merge, James Bond")  |  ![LIME_DOF_Merge_Ms_Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1390-0-1390-5.png "LIME & Dense Optical Flow Merge, Ms. Pacman")
 
-Road Runner | Tennis
+Road Runner (UP_LEFT) | Tennis (UP_LEFT_FIRE)
 :----------:|:----------:
 ![LIME_DOF_Merge_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/140-0-140-7.png "LIME & Dense Optical Flow Merge, Road Runner")  |  ![LIME_DOF_Merge_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/760-0-760-15.png "LIME & Dense Optical Flow Merge, Tennis")
 
@@ -83,13 +85,13 @@ Road Runner | Tennis
 
 Cluster analysis of the previously captured observations was performed to determine whether specific actions were taken for frames that contain similar artefacts. The analysis was performed using the [K-Means](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512992) and [Agglomerative Hierarchical](https://books.google.co.uk/books/about/Numerical_Taxonomy.html?id=iWWcQgAACAAJ&redir_esc=y) clustering algorithms. The results of both techniques are compared using [silhouette coefficients](https://ac.els-cdn.com/0377042787901257/1-s2.0-0377042787901257-main.pdf?_tid=45f93935-07e9-4d91-9c07-f887d75d4283&acdnat=1524558319_227f4e120f76072443bc235ab08a6d55) which score the quality of the resulting clusters based on the coherance of instances in the same cluster and the separation of different clusters.
 
-Below is an example of the graphical results obtained from clustering observations from the Astroids Atari game.
+Below is an example of the graphical results obtained from clustering observations from the Asteroids Atari game.
 
-Astroids, K-Means Clustering |  Asteroids, Agglomerative Clustering
+Asteroids, K-Means Clustering |  Asteroids, Agglomerative Clustering
 :---------------------------:|:------------------------------------:
 ![K-Means_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png "Astroids, K-Means Clustering")  |  ![Agglomerative_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_agglomerative_silhouette_asteroids.png "Asteroids, Agglomerative Clustering")
 
-The table below summarises the graphical results; it presents the number of actions available to the agent in each game, the lowest silhouette score obtained by each technique and the number of clusters used to obtain the lowest silhouette score.
+The table below summarises the graphical results across the eight games used in this work; it presents the number of actions available to the agent in each game, the lowest silhouette score obtained by each technique and the number of clusters used to obtain the lowest silhouette score.
 
 | Game          | Actions | SC K-Means (3SF) | # Clusters K-Means | SC Agglomerative (3SF) | # Clusters Agglomerative |
 | ------------- |:-------:|:----------------:|:------------------:|:----------------------:|:------------------------:|
