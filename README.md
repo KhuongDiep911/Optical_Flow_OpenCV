@@ -86,9 +86,9 @@ Image histograms were uses as the distance metric with a bin size of 256. 1000 i
 
 Below is an example of the graphical results obtained from clustering observations from the Astroids Atari game.
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![K-Means_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png "TEXT")  |  ![Agglomerative_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_agglomerative_silhouette_asteroids.png "TEXT")
+Astroids, K-Means Clustering |  Asteroids, Agglomerative Clustering
+:---------------------------:|:------------------------------------:
+![K-Means_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png "Astroids, K-Means Clustering")  |  ![Agglomerative_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_agglomerative_silhouette_asteroids.png "Asteroids, Agglomerative Clustering")
 
 The table below summarises the graphics results by showing the lowest silhouette score for each technique and the number of clusters for which that score was obtained.
 
