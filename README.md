@@ -9,31 +9,25 @@ This file briefly explains the experiments conducted and provides a samples of t
 
 ## Experiments
 
-Several experiments were conducted using data instances captured in [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) which aim to provide insights as to why autonomous agents trained to play Atari 2600 games took the actions they did and therefore discover what the agent learnt about the game in order to play successfully.
+Each experiment performed approaches the problem from a different perspective. This section introduces the motives behind these experiments and presents a sample of results.
 
-* **LIME** By perturbing the Atari 2600 gameplay frames, the LIME framework reveals regions of the input frames that made the most contribution towards selecting the resulting action.
-* **Optical Flow** Reveals the movement of atrefacts in the frame that could be key to the agents deciding upon an action.
-* **Image Clustering** Identifies whether similarities in sequences of frames are responsible for the agent selecting the action they did.
+### Frame Perturbation
 
-An overview of these experiments and a summary of results is provided below.
+Previously captured observations are passed to the [LIME](https://github.com/marcotcr/lime) framework which perturbs the sequence of frames to determine which regions contributed most significantly towards the selection of the associated action. 
 
-### LIME (Local Interpretable Model-Agnostic Explanations)
-
-[LIME](https://github.com/marcotcr/lime)
-
-Astroids | Battle Zone
+Astroids (UP_FIRE) | Battle Zone (DOWN_FIRE)
 :-------:|:----------:
 ![LIME_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/asteroids/frames/4394-6-23-8.png "LIME, Asteroids") | ![LIME_Battle_Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/battle_zone/frames/2177-0-2177-13.png "LIME, Battle Zone")
 
-Breakout | Gopher
+Breakout (RIGHT) | Gopher (RIGHT)
 :-------:|:----------:
 ![LIME_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/breakout/frames/1911-0-1911-2.png "LIME, Breakout")  |  ![LIME_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/gopher/frames/1131-0-1131-3.png "LIME, Gopher")
 
-James Bond | Ms. Pacman
+James Bond (DOWN_LEFT_FIRE) | Ms. Pacman (RIGHT)
 :---------:|:----------:
 ![LIME_James_Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/james_bond/frames/4851-2-494-17.png "LIME, James Bond")  |  ![LIME_Ms_Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/ms_pacman/frames/4475-1-2048-2.png "LIME, Ms. Pacman")
 
-Road Runner | Tennis
+Road Runner (UP_LEFT) | Tennis (DOWN_LEFT)
 :----------:|:----------:
 ![LIME_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "LIME, Road Runner")  |  ![LIME_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "LIME, Tennis")
 
@@ -50,7 +44,9 @@ Road Runner | Tennis
 <!-- ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "TEXT")
 ![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "TEXT") -->
 
-### Optical Flow
+### Movement
+
+* **Movement** Optical flow techniques were used to reveal and extract the movement of artefacts in the gameplay frames which the agent may use to select the associated action.
 
 Optical flow was used to identify the movement of actors in the scene which is seen been the Atari agent during the sequence of input frames. Below are the results of running the spare optical flow and the dense optical flow.
 
@@ -99,6 +95,8 @@ Road Runner | Tennis
 ![LIME_DOF_Merge_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/140-0-140-7.png "LIME & Dense Optical Flow Merge, Road Runner")  |  ![LIME_DOF_Merge_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/760-0-760-15.png "LIME & Dense Optical Flow Merge, Tennis")
 
 ### Image Cluster Analysis
+
+* **Image Clustering** Forming natural clusters of similar frame sequences may reveal common artefacts that lead to selection of a specific action.
 
 Image cluster analysis is performed to determine whether the observations could be clustered into groups that contain features which reveal the relavent action to be taken.
 
