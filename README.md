@@ -59,11 +59,18 @@ TODO! Add cross images.
 
 ### Clustering
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Game          | Actions | Optimal # Clusters | K-Means | Agglomerative |
+| ------------- |:-------:|:--------:|:-------:|:-------:|:-------------:|
+| Asteroids     | 14      |:--------:|:-------:|:-------:|:-------------:| 
+| Battle Zone   | 18      |:--------:|:-------:|:-------:|:-------------:| 
+| Breakout      | 4       |:--------:|:-------:|:-------:|:-------------:| 
+| Gopher        | 8       |:--------:|:-------:|:-------:|:-------------:|
+| James Bond    | 18      |:--------:|:-------:|:-------:|:-------------:|
+| Ms. Pacman    | 9       |:--------:|:-------:|:-------:|:-------------:|
+| Road Runner   | 18      |:--------:|:-------:|:-------:|:-------------:|
+| Tennis        | 18      |:--------:|:-------:|:-------:|:-------------:|
+
+
 
 <img src="https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/clustering/results/asteroids/graph_kmeans_silhouette_asteroids.png" width="300">
 
