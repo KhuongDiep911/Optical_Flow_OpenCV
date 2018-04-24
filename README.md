@@ -1,9 +1,9 @@
 # CE888 Assignment 2
 # Interpreting the Actions of Atari 2600 Agents
 
-This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances were captured that coupled four sequential frames of Atari 2600 gameplay with the response of an autonomous agent trained to play the game. The pre-trained agent was sourced from the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which trained 47 different Atari 2600 agents using a multi-GPU version of the [A3C algorithm](https://arxiv.org/pdf/1602.01783.pdf).
+This work builds on [CE888 Assignment 1](https://github.com/JamesMadge/ce888assignment1) in which data instances were captured that coupled four sequential frames of Atari 2600 gameplay with the response of an autonomous agent trained to play the game. The pre-trained agent was sourced from the [Tensorpack](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym) framework which trained 47 different Atari 2600 agents using a multi-GPU version of the [A3C](https://arxiv.org/pdf/1602.01783.pdf) algorithm.
 
-The objective of this work is to interpret the captured data instances to provide insights as to why the agents took the actions they did and therefore discover what the agent learnt about the game in order to play successfully. This work conducts serval experiments involving [LIME](https://github.com/marcotcr/lime) (Local Interpretable Model-Agnostic Explanations), OpenCV V3.4.0 Lucas Kanade and Gunnar Farneback [optical flow](https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_lucas_kanade.html) implementations and the scikit learn implementations of [K-Means](http://scikit-learn.org/stable/modules/clustering.html#k-means) and [Agglomerative clustering](http://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering) techniques.
+The objective of this work is to interpret the captured data instances to provide insights as to why the agents took the actions they did and therefore discover what the agent learnt about the game in order to play successfully. This work conducts serval experiments involving [LIME](https://github.com/marcotcr/lime) (Local Interpretable Model-Agnostic Explanations), OpenCV V3.4.0 Lucas-Kanade and Gunnar Farneback [optical flow](https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_lucas_kanade.html) implementations and the scikit learn implementations of [K-Means](http://scikit-learn.org/stable/modules/clustering.html#k-means) and [Agglomerative clustering](http://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering) techniques.
 
 This file briefly explains the experiments conducted and provides a samples of the obtained results.
 
@@ -35,9 +35,9 @@ Road Runner (UP_LEFT) | Tennis (DOWN_LEFT)
 
 Optical flow techniques were used to reveal and extract the movement of artefacts in the gameplay frames which the agent may use to select the associated action.
 
-#### Lucas Kanade, sparse optical flow.
+#### Lucas-Kanade, sparse optical flow.
 
-The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([`calcOpticalFlowPyrLK`](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calcluated and visualised on top of the final frame in the sequence.
+The OpenCV V3.4.0 python implementation of the Lucas-Kanade ([`calcOpticalFlowPyrLK`](https://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk)) sparse optical flow algorithm. Optical flow vectors for each frame transition are calculated and visualised on top of the final frame in the sequence.
 
 ![Lucas_Kanade_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/asteroids/frames/1030-1-547-4.png "Lucas Kanade, Asteroids")
 ![Lucas_Kanade_Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/lucas_kanade/battle_zone/frames/103-0-103-4.png "Lucas Kanade, Battle Zone")
@@ -65,7 +65,7 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOptic
 
 The output of LIME and results of the dense optical flow calculations were combined to create new insights.
 
-Astroids (UP_FIRE) | Battle Zone (UP_FIRE)
+Asteroids (UP_FIRE) | Battle Zone (UP_FIRE)
 :-------:|:----------:
 ![LIME_DOF_Merge_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "LIME & Dense Optical Flow Merge, Asteroids")  |  ![LIME_DOF_Merge_Battle_Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "LIME & Dense Optical Flow Merge, Battle Zone")
 
@@ -83,7 +83,7 @@ Road Runner (UP_LEFT) | Tennis (UP_LEFT_FIRE)
 
 ### Image Cluster Analysis
 
-Cluster analysis of the previously captured observations was performed to determine whether specific actions were taken for frames that contain similar artefacts. The analysis was performed using the [K-Means](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512992) and [Agglomerative Hierarchical](https://books.google.co.uk/books/about/Numerical_Taxonomy.html?id=iWWcQgAACAAJ&redir_esc=y) clustering algorithms. The results of both techniques are compared using [silhouette coefficients](https://ac.els-cdn.com/0377042787901257/1-s2.0-0377042787901257-main.pdf?_tid=45f93935-07e9-4d91-9c07-f887d75d4283&acdnat=1524558319_227f4e120f76072443bc235ab08a6d55) which score the quality of the resulting clusters based on the coherance of instances in the same cluster and the separation of different clusters.
+Cluster analysis of the previously captured observations was performed to determine whether specific actions were taken for frames that contain similar artefacts. The analysis was performed using the [K-Means](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512992) and [Agglomerative Hierarchical](https://books.google.co.uk/books/about/Numerical_Taxonomy.html?id=iWWcQgAACAAJ&redir_esc=y) clustering algorithms. The results of both techniques are compared using [silhouette coefficients](https://ac.els-cdn.com/0377042787901257/1-s2.0-0377042787901257-main.pdf?_tid=45f93935-07e9-4d91-9c07-f887d75d4283&acdnat=1524558319_227f4e120f76072443bc235ab08a6d55) which score the quality of the resulting clusters based on the coherence of instances in the same cluster and the separation of different clusters.
 
 Below is an example of the graphical results obtained from clustering observations from the Asteroids Atari game.
 
