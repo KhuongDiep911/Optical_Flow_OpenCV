@@ -20,17 +20,34 @@ This file briefly describes the results of the study and the impact of the exper
 
 [LIME](https://github.com/marcotcr/lime)
 
-![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/asteroids/frames/4394-6-23-8.png "TEXT")
-![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/battle_zone/frames/2177-0-2177-13.png "TEXT")
+Astroids | Battle Zone
+:-------:|:----------:
+![LIME_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/asteroids/frames/4394-6-23-8.png "LIME, Asteroids") | ![LIME_Battle_Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/battle_zone/frames/2177-0-2177-13.png "LIME, Battle Zone")
 
-![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/breakout/frames/1911-0-1911-2.png "TEXT")
-![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/gopher/frames/1131-0-1131-3.png "TEXT")
+Breakout | Gopher
+:-------:|:----------:
+![LIME_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/breakout/frames/1911-0-1911-2.png "LIME, Breakout")  |  ![LIME_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/gopher/frames/1131-0-1131-3.png "LIME, Gopher")
 
-![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/james_bond/frames/4851-2-494-17.png "TEXT")
-![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/ms_pacman/frames/4475-1-2048-2.png "TEXT")
+James Bond | Ms. Pacman
+:---------:|:----------:
+![LIME_James_Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/james_bond/frames/4851-2-494-17.png "LIME, James Bond")  |  ![LIME_Ms_Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/ms_pacman/frames/4475-1-2048-2.png "LIME, Ms. Pacman")
 
-![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "TEXT")
-![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "TEXT")
+Road Runner | Tennis
+:----------:|:----------:
+![LIME_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "LIME, Road Runner")  |  ![LIME_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "LIME, Tennis")
+
+
+<!-- ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/asteroids/frames/4394-6-23-8.png "TEXT")
+![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/battle_zone/frames/2177-0-2177-13.png "TEXT") -->
+
+<!-- ![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/breakout/frames/1911-0-1911-2.png "TEXT")
+![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/gopher/frames/1131-0-1131-3.png "TEXT") -->
+
+<!-- ![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/james_bond/frames/4851-2-494-17.png "TEXT")
+![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/ms_pacman/frames/4475-1-2048-2.png "TEXT") -->
+
+<!-- ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "TEXT")
+![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "TEXT") -->
 
 ### Optical Flow
 
@@ -79,18 +96,6 @@ James Bond | Ms. Pacman
 Road Runner | Tennis
 :----------:|:----------:
 ![LIME_DOF_Merge_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/140-0-140-7.png "LIME & Dense Optical Flow Merge, Road Runner")  |  ![LIME_DOF_Merge_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/760-0-760-15.png "LIME & Dense Optical Flow Merge, Tennis")
-
-<!-- ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "TEXT")
-![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "TEXT") -->
-
-<!-- ![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1469-0-1469-3.png "TEXT")
-![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1334-0-1334-6.png "TEXT") -->
-
-<!-- ![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1404-0-1404-8.png "TEXT")
-![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1390-0-1390-5.png "TEXT") -->
-
-<!-- ![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/140-0-140-7.png "TEXT")
-![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/760-0-760-15.png "TEXT") -->
 
 ### Image Cluster Analysis
 
