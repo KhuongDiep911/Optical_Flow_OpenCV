@@ -66,13 +66,17 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([calcOptica
 
 Astroids | Battle Zone
 :-------:|:----------:
-![K-Means_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "Astroids, K-Means Clustering")  |  ![Agglomerative_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "Asteroids, Agglomerative Clustering")
+![LIME_DOF_Merge_Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "LIME & Dense Optical Flow Merge, Asteroids")  |  ![LIME_DOF_Merge_Battle_Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "LIME & Dense Optical Flow Merge, Battle Zone")
 
-![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "TEXT")
-![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "TEXT")
+Breakout | Gopher
+:-------:|:----------:
+![LIME_DOF_Merge_Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1469-0-1469-3.png "LIME & Dense Optical Flow Merge, Breakout")  |  ![LIME_DOF_Merge_Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1334-0-1334-6.png "LIME & Dense Optical Flow Merge, Gopher")
 
-![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1469-0-1469-3.png "TEXT")
-![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1334-0-1334-6.png "TEXT")
+<!-- ![Asteroids](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/13-0-13-8.png "TEXT")
+![Battle Zone](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/263-0-263-10.png "TEXT") -->
+
+<!-- ![Breakout](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1469-0-1469-3.png "TEXT")
+![Gopher](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1334-0-1334-6.png "TEXT") -->
 
 ![James Bond](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1404-0-1404-8.png "TEXT")
 ![Ms. Pacman](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/merged_lime_optical_flow/1390-0-1390-5.png "TEXT")
