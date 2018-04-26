@@ -11,7 +11,7 @@ This file briefly explains the experiments conducted and provides a sample of th
 
 Each experiment approaches the problem from a different perspective. This section introduces the motives behind these experiments and presents a sample of results.
 
-### Frame Perturbation
+### LIME (Local Interpretable Model-Agnostic Explanations)
 
 Previously captured observations are passed to the [LIME](https://github.com/marcotcr/lime) framework which perturbs the sequence of frames to determine which regions contributed most significantly towards the selection of the associated action. A data instance for each game is shown below with highlights representing the regions determined by LIME to contribute most significantly towards the selected action.
 
@@ -31,7 +31,7 @@ Road Runner (UP_LEFT) | Tennis (DOWN_LEFT)
 :----------:|:----------:
 ![LIME_Road_Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/road_runner/frames/4877-3-886-7.png "LIME, Road Runner")  |  ![LIME_Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/explanation/results/tennis/frames/662-0-662-9.png "LIME, Tennis")
 
-### Movement
+### Optical Flow
 
 Optical flow techniques were used to reveal and extract the movement of artefacts in the gameplay frames which the agent may use to select the associated action.
 
@@ -65,7 +65,7 @@ The OpenCV V3.4.0 python implementation of the Gunnar Farneback’s ([`calcOptic
 [![Road Runner](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/road_runner/frames/90-0-90-9.png "Gunnar Farneback, Road Runner")](https://youtu.be/-UMCfbBht8E)
 [![Tennis](https://raw.githubusercontent.com/JamesMadge/ce888assignment2/master/optical_flow/results/dense/tennis/frames/10-0-10-16.png "Gunnar Farneback, Tennis")](https://youtu.be/Sorx2HGqqXc)
 
-#### Combining LIME Output and Dense Optical Flow
+#### Blending LIME Explanations with Dense Optical Flow
 
 The output of LIME and results of the dense optical flow calculations were combined to create new insights.
 
